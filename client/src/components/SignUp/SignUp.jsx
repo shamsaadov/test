@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import {
   Avatar,
   Box,
@@ -38,7 +38,7 @@ const SignUp = () => {
   };
 
   const handleSignUpUser = () => {
-      dispatch(fetchSignUpUser({ name, login, password }, history));
+    dispatch(fetchSignUpUser({ name, login, password }, history));
   };
 
   return (

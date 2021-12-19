@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { NavLink, useHistory } from 'react-router-dom'
+import { NavLink, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchLoginUser } from "../../redux/features/user.reducer";
 

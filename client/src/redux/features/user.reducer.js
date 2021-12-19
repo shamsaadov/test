@@ -47,17 +47,6 @@ const user = (state = initialState, action) => {
         signUp: false,
         error: action.error,
       };
-    // case "item/delete/pending":
-    //   return {
-    //     ...state,
-    //     deleting: true
-    //   }
-    // case "item/delete/fulfilled":
-    //   return {
-    //     ...state,
-    //     deleting: false,
-    //
-    //   }
     default:
       return state;
   }
@@ -83,7 +72,7 @@ export const fetchLoginUser = (data, history) => {
       dispatch({ type: "user/login/rejected", error: json.error });
     } else {
       dispatch({ type: "user/login/fulfilled", payload: json });
-      history.push('/contacts')
+      history.push("/contacts");
     }
   };
 };
@@ -107,11 +96,9 @@ export const fetchSignUpUser = (data, history) => {
       dispatch({ type: "user/signup/rejected", error: json.error });
     } else {
       dispatch({ type: "user/signup/fulfilled", payload: json });
-      history.push('/login')
+      history.push("/login");
     }
   };
 };
 
-export const fetchDeleteItem = (id) => {
-
-};
+export const fetchDeleteItem = (id) => {};
